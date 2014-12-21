@@ -41,6 +41,7 @@ makeCacheMatrix <- function(x = matrix()) {
 ## Return a matrix that is the inverse of 'x'. If it doesn't exist in the 'cache', it will
 ## create it if it exists from cache, it will pull it from cacheinstead of calculating it
 cacheSolve <- function(x, ...) 
+{
 ## First function invokes a function from the list of functions built by makecachematrix
 ## which is the cached value of the current matrix input in list 'x'. Might/Might not exist. 
 ## Pushes matrix values to matrix 'm'
